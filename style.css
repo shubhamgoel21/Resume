@@ -4,6 +4,9 @@ body{
 }
 
 /* basic classes common to all */
+.white{
+    color:white;
+}
 .blue{
            color:blue;     
 }
@@ -162,7 +165,7 @@ section:nth-child(2n+1)
 }
 section:nth-child(2n)
 {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     height:75vh;
     display:flex;
     flex-direction: column;
@@ -320,5 +323,108 @@ box-sizing: border-box;
     width:100%;
 }
 
+ /* '#2857a4' and rightmost color is '#403066'. */ 
+/* CONTACT */
+
+#contact{
+    height:65vh;
+    border:1px solid purple;
+    /* background: linear-gradient(red,green); */
+    background: linear-gradient(45deg,#2857a4,#403066) !important;
+}
+#contact span{
+ color:white;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:80%;
+    /* border:1px solid red; */
+    margin-left: 8%;
+    margin-top:-15px;
+}
+#contact-form{
+    /* border:1px solid black; */
+    width:45%;
+    margin-right: 10%;
+}
+#contact-form input,#contact-form textarea{
+    display: block;
+    color:white;
+    background-color: transparent;
+    border:0px 0px 1px 0px;
+    border-color: transparent;
+    border-bottom-color:white ;
+    margin:15px;
+    width:80%;
+    padding:0.3rem;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#contact-form input::placeholder,#contact-form textarea::placeholder{
+    color:lightgrey;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#contact-info{
+    /* border:1px solid black; */
+   width:45%;
+
+}
+#contact-form button{
+    height:40px;
+    width:110px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    font-weight: 900;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    padding:0px;
+    margin-left:34%;
+    
+}
+#address div{
+    margin-bottom:5px;
+}
 
 
+
+/* EXPERIENCE */
+
+.flexcolumn-edu-exp{
+display:flex;
+flex-direction: column;
+height:18rem;
+width:60%;
+border:1px solid red;
+margin-top:-10px;
+
+}
+.relative-pos{
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.box{
+    height:6rem;
+    width:45%;
+    border: 1px solid black;
+    /* position:absolute; */
+    /* margin-top:-px; */
+}
+
+/* .box:nth-child(2n)
+{
+    /* left:0px;
+    top:auto; */
+}
+.box:nth-child(2n+1)
+{
+    /* top:auto;
+    left:42%; */
+} */
