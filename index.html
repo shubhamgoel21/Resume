@@ -13,15 +13,19 @@
 </head>
 <body>
         <header>
+             <div id="drop-down">
+                     <img src="/pics/cn-logo.jfif" alt="cn logo">
+             </div>
+
                    <nav id="navigation">
-                              <ul>
+                              <ul class="navmenu">
                                          <li><a href="#">Home</a></li>
-                                         <li><a href="#about">About</a></li>
-                                         <li><a href="#skills">Skills</a></li>
-                                         <li><a href="#experience">Experience</a></li>
-                                         <li><a href="#education">Education</a></li>
-                                         <li><a href="#portfolio">Portfolio</a></li>
-                                         <li><a href="#contact">Contact</a></li>
+                                         <li><a href="#about" id="about-link">About</a></li>
+                                         <li><a href="#skills" id="skill-link">Skills</a></li>
+                                         <li><a href="#experience" id="experience-link">Experience</a></li>
+                                         <li><a href="#education" id="education-link">Education</a></li>
+                                         <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+                                         <li><a href="#contact" id="contact-link">Contact</a></li>
                               </ul>
                    </nav>
                    <div id="name">Shubham Goel</div>
@@ -76,25 +80,25 @@
                <div class="skill-indicator">
                                        
                         <div class="skill-box">
-                                <div class="skill-value bg-aqua wd-90"><p>C++</p></div>
+                                <div class="skill-value bg-aqua wd-90" data-value="90"><p>C++</p></div>
                         </div>
                         <div class="skill-box">
-                                <div class="skill-value bg-blue wd-90"><p>DSA</p></div>
+                                <div class="skill-value bg-blue wd-90" data-value="90"><p>DSA</p></div>
                         </div>
                         <div class="skill-box">
-                                <div class="skill-value bg-pink wd-10"><p>CP</p></div>
+                                <div class="skill-value bg-pink wd-10" data-value="10"><p>CP</p></div>
                         </div>
                         <div class="skill-box">
-                                <div class="skill-value bg-red wd-70"><p>FRONT-END</p></div>
+                                <div class="skill-value bg-red wd-70" data-value="70"><p>FRONT-END</p></div>
                         </div>
                         <div class="skill-box">
-                                <div class="skill-value bg-green wd-10"><p>BACKEND</p></div>
+                                <div class="skill-value bg-green wd-10" data-value="10"><p>BACKEND</p></div>
                         </div>
                         <div class="skill-box">
-                                <div class="skill-value bg-pink wd-70"><p>REACT</p></div>
+                                <div class="skill-value bg-pink wd-70" data-value="70"><p>REACT</p></div>
                         </div>
                         <div class="skill-box">
-                                <div class="skill-value bg-brown wd-100"><p>GIT/GITHUB</p></div>
+                                <div class="skill-value bg-brown wd-100" data-value="100"><p>GIT/GITHUB</p></div>
                         </div>
                         <!-- <div class="skill-box">
                                 <div class="skill-value"></div>
@@ -329,6 +333,8 @@
                    
 
         </main> 
+
+        <script src="test.js"></script>
            
 </body>
 </html>
